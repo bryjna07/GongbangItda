@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		173B6E842EF03B6F008E4BE2 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 173B6E832EF03B6F008E4BE2 /* Then */; };
+		173B6E872EF03D18008E4BE2 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 173B6E862EF03D18008E4BE2 /* RxMoya */; };
+		173B6E8A2EF03D69008E4BE2 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 173B6E892EF03D69008E4BE2 /* KeychainAccess */; };
+		173B6E8D2EF03D99008E4BE2 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 173B6E8C2EF03D99008E4BE2 /* RxCocoa */; };
+		173B6E8F2EF03D99008E4BE2 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 173B6E8E2EF03D99008E4BE2 /* RxSwift */; };
+		173B6E922EF03DBA008E4BE2 /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 173B6E912EF03DBA008E4BE2 /* ReactorKit */; };
+		173B6E952EF03DDD008E4BE2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 173B6E942EF03DDD008E4BE2 /* SnapKit */; };
+		173B6E982EF03DFE008E4BE2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 173B6E972EF03DFE008E4BE2 /* Kingfisher */; };
+		173B6E9B2EF03E5E008E4BE2 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 173B6E9A2EF03E5E008E4BE2 /* IQKeyboardManagerSwift */; };
+		173B6E9E2EF03E83008E4BE2 /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = 173B6E9D2EF03E83008E4BE2 /* TextFieldEffects */; };
+		173B6EA12EF03EAB008E4BE2 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 173B6EA02EF03EAB008E4BE2 /* Swinject */; };
+		173B6EA42EF03F06008E4BE2 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 173B6EA32EF03F06008E4BE2 /* RealmSwift */; };
+		173B6EA72EF03FBE008E4BE2 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 173B6EA62EF03FBE008E4BE2 /* Toast */; };
 		175C5E342EE974A900792322 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 175C5E332EE974A900792322 /* FirebaseCore */; };
 		175C5E362EE974A900792322 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 175C5E352EE974A900792322 /* FirebaseMessaging */; };
 /* End PBXBuildFile section */
@@ -41,8 +54,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				173B6E8D2EF03D99008E4BE2 /* RxCocoa in Frameworks */,
 				175C5E362EE974A900792322 /* FirebaseMessaging in Frameworks */,
+				173B6EA42EF03F06008E4BE2 /* RealmSwift in Frameworks */,
+				173B6EA72EF03FBE008E4BE2 /* Toast in Frameworks */,
+				173B6E922EF03DBA008E4BE2 /* ReactorKit in Frameworks */,
+				173B6E842EF03B6F008E4BE2 /* Then in Frameworks */,
+				173B6E982EF03DFE008E4BE2 /* Kingfisher in Frameworks */,
+				173B6E872EF03D18008E4BE2 /* RxMoya in Frameworks */,
 				175C5E342EE974A900792322 /* FirebaseCore in Frameworks */,
+				173B6E952EF03DDD008E4BE2 /* SnapKit in Frameworks */,
+				173B6E8A2EF03D69008E4BE2 /* KeychainAccess in Frameworks */,
+				173B6E9E2EF03E83008E4BE2 /* TextFieldEffects in Frameworks */,
+				173B6E9B2EF03E5E008E4BE2 /* IQKeyboardManagerSwift in Frameworks */,
+				173B6E8F2EF03D99008E4BE2 /* RxSwift in Frameworks */,
+				173B6EA12EF03EAB008E4BE2 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +113,19 @@
 			packageProductDependencies = (
 				175C5E332EE974A900792322 /* FirebaseCore */,
 				175C5E352EE974A900792322 /* FirebaseMessaging */,
+				173B6E832EF03B6F008E4BE2 /* Then */,
+				173B6E862EF03D18008E4BE2 /* RxMoya */,
+				173B6E892EF03D69008E4BE2 /* KeychainAccess */,
+				173B6E8C2EF03D99008E4BE2 /* RxCocoa */,
+				173B6E8E2EF03D99008E4BE2 /* RxSwift */,
+				173B6E912EF03DBA008E4BE2 /* ReactorKit */,
+				173B6E942EF03DDD008E4BE2 /* SnapKit */,
+				173B6E972EF03DFE008E4BE2 /* Kingfisher */,
+				173B6E9A2EF03E5E008E4BE2 /* IQKeyboardManagerSwift */,
+				173B6E9D2EF03E83008E4BE2 /* TextFieldEffects */,
+				173B6EA02EF03EAB008E4BE2 /* Swinject */,
+				173B6EA32EF03F06008E4BE2 /* RealmSwift */,
+				173B6EA62EF03FBE008E4BE2 /* Toast */,
 			);
 			productName = lessons;
 			productReference = 175C5E192EE9731E00792322 /* lessons.app */;
@@ -118,6 +157,18 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				175C5E322EE974A900792322 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				173B6E822EF03B6F008E4BE2 /* XCRemoteSwiftPackageReference "Then" */,
+				173B6E852EF03D18008E4BE2 /* XCRemoteSwiftPackageReference "Moya" */,
+				173B6E882EF03D69008E4BE2 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				173B6E8B2EF03D99008E4BE2 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				173B6E902EF03DBA008E4BE2 /* XCRemoteSwiftPackageReference "ReactorKit" */,
+				173B6E932EF03DDD008E4BE2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				173B6E962EF03DFE008E4BE2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				173B6E992EF03E5E008E4BE2 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				173B6E9C2EF03E83008E4BE2 /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
+				173B6E9F2EF03EAB008E4BE2 /* XCRemoteSwiftPackageReference "Swinject" */,
+				173B6EA22EF03F06008E4BE2 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				173B6EA52EF03FBE008E4BE2 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 175C5E1A2EE9731E00792322 /* Products */;
@@ -369,6 +420,102 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		173B6E822EF03B6F008E4BE2 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		173B6E852EF03D18008E4BE2 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+		173B6E882EF03D69008E4BE2 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.2.2;
+			};
+		};
+		173B6E8B2EF03D99008E4BE2 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.1;
+			};
+		};
+		173B6E902EF03DBA008E4BE2 /* XCRemoteSwiftPackageReference "ReactorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactorKit/ReactorKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
+		173B6E932EF03DDD008E4BE2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		173B6E962EF03DFE008E4BE2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.2;
+			};
+		};
+		173B6E992EF03E5E008E4BE2 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.1;
+			};
+		};
+		173B6E9C2EF03E83008E4BE2 /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/raulriera/TextFieldEffects";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.0;
+			};
+		};
+		173B6E9F2EF03EAB008E4BE2 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.0;
+			};
+		};
+		173B6EA22EF03F06008E4BE2 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 20.0.3;
+			};
+		};
+		173B6EA52EF03FBE008E4BE2 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
 		175C5E322EE974A900792322 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -380,6 +527,71 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		173B6E832EF03B6F008E4BE2 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 173B6E822EF03B6F008E4BE2 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		173B6E862EF03D18008E4BE2 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 173B6E852EF03D18008E4BE2 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		173B6E892EF03D69008E4BE2 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 173B6E882EF03D69008E4BE2 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		173B6E8C2EF03D99008E4BE2 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 173B6E8B2EF03D99008E4BE2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		173B6E8E2EF03D99008E4BE2 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 173B6E8B2EF03D99008E4BE2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		173B6E912EF03DBA008E4BE2 /* ReactorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 173B6E902EF03DBA008E4BE2 /* XCRemoteSwiftPackageReference "ReactorKit" */;
+			productName = ReactorKit;
+		};
+		173B6E942EF03DDD008E4BE2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 173B6E932EF03DDD008E4BE2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		173B6E972EF03DFE008E4BE2 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 173B6E962EF03DFE008E4BE2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		173B6E9A2EF03E5E008E4BE2 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 173B6E992EF03E5E008E4BE2 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		173B6E9D2EF03E83008E4BE2 /* TextFieldEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 173B6E9C2EF03E83008E4BE2 /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
+			productName = TextFieldEffects;
+		};
+		173B6EA02EF03EAB008E4BE2 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 173B6E9F2EF03EAB008E4BE2 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		173B6EA32EF03F06008E4BE2 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 173B6EA22EF03F06008E4BE2 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		173B6EA62EF03FBE008E4BE2 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 173B6EA52EF03FBE008E4BE2 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
 		175C5E332EE974A900792322 /* FirebaseCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 175C5E322EE974A900792322 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
