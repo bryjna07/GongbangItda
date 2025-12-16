@@ -1,3 +1,10 @@
+//
+//  Log.swift
+//  lessons
+//
+//  Created by Watson22_YJ on 12/16/25.
+//
+
 import OSLog
 
 enum Log {
