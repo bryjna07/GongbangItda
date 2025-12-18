@@ -95,7 +95,7 @@ extension UIImageView: ImageLoadable {
             ? .seconds(86400)  // 0일 = 24시간
             : .days(strategy.expirationDays)
 
-        // API 헤더 추가 (SeSACKey, Authorization)
+        // API 헤더 추가 (Key, Authorization)
         let modifier = KingfisherRequestModifier()
 
         let options: KingfisherOptionsInfo = [
