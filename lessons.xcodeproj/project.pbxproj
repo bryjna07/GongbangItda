@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		173B6E842EF03B6F008E4BE2 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 173B6E832EF03B6F008E4BE2 /* Then */; };
-		173B6E872EF03D18008E4BE2 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 173B6E862EF03D18008E4BE2 /* RxMoya */; };
 		173B6E8A2EF03D69008E4BE2 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 173B6E892EF03D69008E4BE2 /* KeychainAccess */; };
 		173B6E8D2EF03D99008E4BE2 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 173B6E8C2EF03D99008E4BE2 /* RxCocoa */; };
 		173B6E8F2EF03D99008E4BE2 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 173B6E8E2EF03D99008E4BE2 /* RxSwift */; };
@@ -22,6 +21,7 @@
 		173B6EA72EF03FBE008E4BE2 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 173B6EA62EF03FBE008E4BE2 /* Toast */; };
 		175C5E342EE974A900792322 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 175C5E332EE974A900792322 /* FirebaseCore */; };
 		175C5E362EE974A900792322 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 175C5E352EE974A900792322 /* FirebaseMessaging */; };
+		179E58FC2EF43D0500EE79C6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 179E58FB2EF43D0500EE79C6 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				179E58FC2EF43D0500EE79C6 /* Alamofire in Frameworks */,
 				173B6E8D2EF03D99008E4BE2 /* RxCocoa in Frameworks */,
 				175C5E362EE974A900792322 /* FirebaseMessaging in Frameworks */,
 				173B6EA42EF03F06008E4BE2 /* RealmSwift in Frameworks */,
@@ -61,7 +62,6 @@
 				173B6E922EF03DBA008E4BE2 /* ReactorKit in Frameworks */,
 				173B6E842EF03B6F008E4BE2 /* Then in Frameworks */,
 				173B6E982EF03DFE008E4BE2 /* Kingfisher in Frameworks */,
-				173B6E872EF03D18008E4BE2 /* RxMoya in Frameworks */,
 				175C5E342EE974A900792322 /* FirebaseCore in Frameworks */,
 				173B6E952EF03DDD008E4BE2 /* SnapKit in Frameworks */,
 				173B6E8A2EF03D69008E4BE2 /* KeychainAccess in Frameworks */,
@@ -114,7 +114,6 @@
 				175C5E332EE974A900792322 /* FirebaseCore */,
 				175C5E352EE974A900792322 /* FirebaseMessaging */,
 				173B6E832EF03B6F008E4BE2 /* Then */,
-				173B6E862EF03D18008E4BE2 /* RxMoya */,
 				173B6E892EF03D69008E4BE2 /* KeychainAccess */,
 				173B6E8C2EF03D99008E4BE2 /* RxCocoa */,
 				173B6E8E2EF03D99008E4BE2 /* RxSwift */,
@@ -126,6 +125,7 @@
 				173B6EA02EF03EAB008E4BE2 /* Swinject */,
 				173B6EA32EF03F06008E4BE2 /* RealmSwift */,
 				173B6EA62EF03FBE008E4BE2 /* Toast */,
+				179E58FB2EF43D0500EE79C6 /* Alamofire */,
 			);
 			productName = lessons;
 			productReference = 175C5E192EE9731E00792322 /* lessons.app */;
@@ -158,7 +158,6 @@
 			packageReferences = (
 				175C5E322EE974A900792322 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				173B6E822EF03B6F008E4BE2 /* XCRemoteSwiftPackageReference "Then" */,
-				173B6E852EF03D18008E4BE2 /* XCRemoteSwiftPackageReference "Moya" */,
 				173B6E882EF03D69008E4BE2 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 				173B6E8B2EF03D99008E4BE2 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				173B6E902EF03DBA008E4BE2 /* XCRemoteSwiftPackageReference "ReactorKit" */,
@@ -169,6 +168,7 @@
 				173B6E9F2EF03EAB008E4BE2 /* XCRemoteSwiftPackageReference "Swinject" */,
 				173B6EA22EF03F06008E4BE2 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				173B6EA52EF03FBE008E4BE2 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				179E58FA2EF43D0500EE79C6 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 175C5E1A2EE9731E00792322 /* Products */;
@@ -230,7 +230,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -267,7 +267,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -428,14 +428,6 @@
 				minimumVersion = 3.0.0;
 			};
 		};
-		173B6E852EF03D18008E4BE2 /* XCRemoteSwiftPackageReference "Moya" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Moya/Moya.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 15.0.3;
-			};
-		};
 		173B6E882EF03D69008E4BE2 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
@@ -524,6 +516,14 @@
 				minimumVersion = 12.6.0;
 			};
 		};
+		179E58FA2EF43D0500EE79C6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -531,11 +531,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 173B6E822EF03B6F008E4BE2 /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
-		};
-		173B6E862EF03D18008E4BE2 /* RxMoya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 173B6E852EF03D18008E4BE2 /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = RxMoya;
 		};
 		173B6E892EF03D69008E4BE2 /* KeychainAccess */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -601,6 +596,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 175C5E322EE974A900792322 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseMessaging;
+		};
+		179E58FB2EF43D0500EE79C6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 179E58FA2EF43D0500EE79C6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

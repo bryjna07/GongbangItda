@@ -9,19 +9,15 @@ import Foundation
 import Kingfisher
 
 /// Kingfisher 이미지 다운로드 요청 헤더
-final class KingfisherRequestModifier: ImageDownloadRequestModifier {
+struct KingfisherRequestModifier: ImageDownloadRequestModifier {
 
     // MARK: - ImageDownloadRequestModifier
 
     func modified(for request: URLRequest) -> URLRequest? {
         var req = request
 
-        // 1) SeSACKey 추가 (xcconfig → Info.plist)
-        if let sesacKey = APIKeyManager.loadSeSACKey() {
-            req.setValue(sesacKey, forHTTPHeaderField: "SeSACKey")
-        } else {
-            Log.error("SeSACKey 없음 - Info.plist 확인 필요")
-        }
+        // 1) APIKey 추가
+        req.setValue(Secret.apiKey, forHTTPHeaderField: "SeSACKey")
 
         // 2) Authorization 추가 (Keychain)
         if let accessToken = KeychainManager.loadAccessToken() {
