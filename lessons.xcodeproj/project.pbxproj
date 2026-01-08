@@ -203,6 +203,8 @@
 /* Begin XCBuildConfiguration section */
 		175C5E2D2EE9731F00792322 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 175C5E1B2EE9731E00792322 /* lessons */;
+			baseConfigurationReferenceRelativePath = Secret/Secret.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -277,6 +279,8 @@
 		};
 		175C5E2F2EE9731F00792322 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 175C5E1B2EE9731E00792322 /* lessons */;
+			baseConfigurationReferenceRelativePath = Secret/Secret.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;

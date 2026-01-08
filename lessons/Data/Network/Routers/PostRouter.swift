@@ -83,6 +83,15 @@ extension PostRouter: Router {
         }
     }
 
+    var isMultipartUpload: Bool {
+        switch self {
+        case .uploadFiles:
+            return true
+        default:
+            return false
+        }
+    }
+
     var parameters: Parameters? {
         switch self {
         case .uploadFiles:

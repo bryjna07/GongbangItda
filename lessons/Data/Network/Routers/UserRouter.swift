@@ -54,6 +54,15 @@ extension UserRouter: Router {
         }
     }
 
+    var isMultipartUpload: Bool {
+        switch self {
+        case .uploadProfileImage:
+            return true
+        default:
+            return false
+        }
+    }
+
     var parameters: Parameters? {
         switch self {
         case .fetchMyProfile:
