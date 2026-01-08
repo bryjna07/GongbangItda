@@ -50,3 +50,31 @@ struct UserSearchResultDTO: Decodable {
         case introduction
     }
 }
+
+// MARK: - DTO → Entity Mapping
+
+extension UserProfileResponseDTO {
+    func toEntity() -> User {
+        return User(
+            id: userId,
+            email: email,
+            nickname: nick,
+            profileImageURL: profileImage,
+            phoneNumber: phoneNum,
+            introduction: introduction
+        )
+    }
+}
+
+extension UserSearchResultDTO {
+    func toEntity() -> User {
+        return User(
+            id: userId,
+            email: "", // 검색 결과에는 email 없음
+            nickname: nick,
+            profileImageURL: profileImage,
+            phoneNumber: nil,
+            introduction: introduction
+        )
+    }
+}

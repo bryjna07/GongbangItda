@@ -20,6 +20,9 @@ protocol Router: URLRequestConvertible {
     var headers: HTTPHeaders { get }
     var parameters: Parameters? { get }
     var encoding: ParameterEncoding { get }
+
+    /// Multipart 업로드 여부 (true일 경우 Content-Type 헤더 제외)
+    var isMultipartUpload: Bool { get }
 }
 
 // MARK: - Default Implementation
@@ -30,11 +33,20 @@ extension Router {
         return Secret.baseURL
     }
 
+    var isMultipartUpload: Bool {
+        return false
+    }
+
     var headers: HTTPHeaders {
-        return HTTPHeaders([
-            HTTPHeader.contentType,
-            HTTPHeader.apiKey
-        ])
+        if isMultipartUpload {
+            // Multipart 업로드는 Content-Type을 Alamofire가 자동으로 설정
+            return HTTPHeaders([.apiKey])
+        } else {
+            return HTTPHeaders([
+                HTTPHeader.contentType,
+                HTTPHeader.apiKey
+            ])
+        }
     }
 
     var encoding: ParameterEncoding {
