@@ -21,16 +21,16 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureNavigation()
+        setupNavigationBar()
     }
     
     // MARK: - Navigation Bar
     
     /// 네비게이션 바 설정
-    func configureNavigation() {
+    func setupNavigationBar() {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = .systemBackground
+        appearance.backgroundColor = .gray0
         appearance.shadowColor = .clear
 
         navigationController?.navigationBar.tintColor = .label
