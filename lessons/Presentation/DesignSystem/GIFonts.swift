@@ -5,6 +5,7 @@ enum GIFonts {
 
     private enum FontName {
         static let pretendardBold = "Pretendard-Bold"
+        static let pretendardSemiBold = "Pretendard-SemiBold"
         static let pretendardMedium = "Pretendard-Medium"
         static let pretendardRegular = "Pretendard-Regular"
         static let paperlogyBlack = "Paperlogy-9Black"
@@ -23,10 +24,19 @@ enum GIFonts {
 
     /// Pretendard Medium 13pt
     static let pretendardBody3 = font(FontName.pretendardMedium, size: 13, fallback: .medium)
+    
+    /// Pretendard Bold 13pt
+    static let pretendardBody3Bold = font(FontName.pretendardBold, size: 13, fallback: .medium)
 
     /// Pretendard Regular 12pt
     static let pretendardCaption1 = font(FontName.pretendardRegular, size: 12, fallback: .regular)
-
+    
+    /// Pretendard SemiBold 12pt
+    static let pretendardCaption1SemiBold = font(FontName.pretendardSemiBold, size: 12, fallback: .regular)
+    
+    /// Pretendard Medium 12pt
+    static let pretendardCaption1Medium = font(FontName.pretendardMedium, size: 12, fallback: .regular)
+    
     /// Pretendard Regular 10pt
     static let pretendardCaption2 = font(FontName.pretendardRegular, size: 10, fallback: .regular)
 
@@ -57,10 +67,19 @@ enum GIFonts {
 
     /// 본문 3: Pretendard Medium 13pt
     static let body3 = pretendardBody3
+    
+    /// 본문 3: Pretendard Bold 13pt
+    static let body3Bold = pretendardBody3Bold
 
+    /// 캡션 1 SemiBold: Pretendard SemiBold 12pt
+    static let caption1SemiBold = pretendardCaption1SemiBold
+    
+    /// 캡션 1: Pretendard Medium 12pt
+    static let caption1Medium = pretendardCaption1Medium
+    
     /// 캡션 1: Pretendard Regular 12pt
     static let caption1 = pretendardCaption1
-
+    
     /// 캡션 2: Pretendard Regular 10pt
     static let caption2 = pretendardCaption2
 
